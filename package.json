@@ -1,0 +1,15 @@
+{
+  "name": "css-grid-responsive",
+  "version": "1.0.0",
+  "description": "practicing with css grid ",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarmun b",
+  "license": "ISC"
+}
