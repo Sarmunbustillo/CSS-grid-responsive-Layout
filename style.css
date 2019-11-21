@@ -179,6 +179,7 @@ margin: 0;
   padding: 10px;
   border: 1px solid white;
   text-align: center;
+  border-radius: 0%;
   box-shadow: 1px 1px 10px 0px black;
   transition: all .25s ease-in-out;
 }
