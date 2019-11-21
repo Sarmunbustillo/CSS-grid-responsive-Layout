@@ -179,7 +179,6 @@ margin: 0;
   padding: 10px;
   border: 1px solid white;
   text-align: center;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 10px 0px black;
   transition: all .25s ease-in-out;
 }
