@@ -1,5 +1,5 @@
 :root {
-  --purple: hsl(320, 67%, 41%);
+  --green: rgb(164, 189, 181);
   --black: #272727;
 }
 
@@ -20,9 +20,8 @@ html {
 }
 
 body {
-  background-image:
-  linear-gradient( rgb(168, 64, 15), #cfb108);
-  background-size: 340px, auto;
+  background-image:  linear-gradient(to right, rgb(63, 151, 123), rgb(5, 53, 38));
+  background-size: rgb(3, 1, 1);
   min-height: calc(100vh - 100px);
   margin: 50px;
   /* background: white; */
@@ -46,7 +45,8 @@ h6 {
   border: 5px solid rgba(0, 0, 0, 0.03);
   border-radius: 3px;
   font-size: 35px;
-  background-color: var(--purple); 
+  background-color: var(--green); 
+  
 }
 
 .item p {
@@ -59,9 +59,16 @@ h6 {
 }
 
 button {
-  background:var(--purple);
+  background:var(--green);
   border: 0;
   padding: 10px 20px;
+  border-radius: 5%;
+  box-shadow: 0px 1px 3px 0px black;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(1.6px);
 }
 
 img {
@@ -71,6 +78,7 @@ img {
 .wrapper {
   display: grid;
   grid-gap: 20px;
+  
 }
 
 .top {
@@ -95,7 +103,7 @@ img {
 }
 
 .hero > * {
-  background: var(--purple) ;
+  background: var(--green) ;
   padding: 5px;
   opacity: .8;
 }
@@ -103,7 +111,7 @@ img {
 
 
 .cta {
-  background: var(--purple);
+  background: var(--green);
   display: grid;
   align-items: center;
   justify-items: center;
@@ -137,7 +145,7 @@ margin: 0;
 }
 
 .menu a {
-  background: var(--purple);
+  background: var(--green);
   display: block;
   text-decoration: none;
   padding: 10px;
@@ -145,6 +153,11 @@ margin: 0;
   color: var(--black);
   text-transform: uppercase;
   font-size: 20px;
+  transition: all .2s ease-in-out;
+
+}
+.menu a:hover{
+  transform: scale(1.05);
 }
 
 /* attribute selector */
@@ -158,7 +171,7 @@ margin: 0;
 .features {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
 }
 
 .feature {
@@ -167,7 +180,14 @@ margin: 0;
   border: 1px solid white;
   text-align: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  box-shadow: 1px 1px 10px 0px black;
+  transition: all .25s ease-in-out;
+}
 
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 20px 0px black;
 }
 
 .feature .icon {
@@ -210,7 +230,7 @@ color: rgba(0, 0, 0, 0.5)
   display: block;
   content: '';
   height: 10px;
-  background: linear-gradient(to var(--direction, left), var(--purple), transparent)
+  background: linear-gradient(to var(--direction, left), var(--green), transparent)
   
 }
  .gallery h2:after {
@@ -219,6 +239,7 @@ color: rgba(0, 0, 0, 0.5)
 
 .gallery img {
   width:  100%;
+  border-radius: 5%;
 }
 
 @media (max-width: 1000px) {
